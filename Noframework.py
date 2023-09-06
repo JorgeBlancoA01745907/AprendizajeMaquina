@@ -41,7 +41,19 @@ def euclideana(x1, x2):
     return math.sqrt(squared_distance)
 
 def k_nearest_neighbors(X_train, y_train, x_test, k=3):
-    # Función de algoritmo knn
+    """
+    Función conn la implementación de knn, se eligió el modelo knn ya que es bueno para problemas de clasificación
+    como el que proponen los datasets de digits e iris
+
+    Parámetros:
+    - X_train (array): Conjunto de entrenamiento con ejemplos de entrada.
+    - y_train (array): Etiquetas correspondientes al conjunto de entrenamiento.
+    - x_test (array): Ejemplos de entrada para los cuales se realizarán las predicciones.
+    - k (int): Número de vecinos más cercanos a considerar para la clasificación (valor predeterminado: 3).
+
+    Return:
+    - predicciones (list): Lista de etiquetas predichas para los ejemplos de entrada en x_test.
+    """
     
     # Lista vacía donde se guardarán las predicciones del modelo
     predicciones = []
